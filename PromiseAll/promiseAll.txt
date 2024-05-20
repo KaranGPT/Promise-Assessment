@@ -1,0 +1,19 @@
+// Usage
+
+Promise.all() method accepts an iterable Object such as an Array of promises as an input & 
+returns a single promise that resolves to a result array of the input promises.
+
+When all input promises have been resolved or the iterable input does not contain a promise,
+the return promise will be resolved.
+
+It rejects immediately when an input promise rejects or non-promise throws an error and
+will reject with that first rejection message/error message.
+
+It is often used when there are many asynchronous tasks involved that the overall code
+relies on to work successfully.
+
+When an empty iterable is passed, the promise returned by this method is executed synchronously. 
+The resolved value will be an empty array.
+
+When a non-empty iterable is passed, and all of the promises fulfill or are not promises,
+the promise returned by this method will be executed asynchronously.
