@@ -1,0 +1,6 @@
+Takes an iterable of promises.
+
+Returns a new promise that resolves or rejects as soon as any of the input promises resolves or rejects.
+
+The returned promise adopts the state (resolved/rejected) and value/reason of the first settled promise.
+
