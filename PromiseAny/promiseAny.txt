@@ -1,0 +1,7 @@
+Takes an iterable of promises.
+
+Returns a new promise that resolves as soon as any of the input promises resolves.
+
+The resolved value is the value of the first resolved promise.
+
+If all input promises reject, Promise.any rejects with an AggregateError containing all rejection reasons.
