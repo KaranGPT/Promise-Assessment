@@ -1,0 +1,7 @@
+A method available on a Promise instance.
+
+Takes a callback function (onFinally) that will be executed regardless of whether the promise is fulfilled or rejected.
+
+Useful for cleanup tasks (closing connections, releasing resources).
+
+Does not modify the result of the original promise.
